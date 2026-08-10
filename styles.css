@@ -115,6 +115,11 @@ h1 { margin: 0; font-family: var(--serif); font-size: 34px; line-height: 1.1; }
 .timeline-date { margin: 0 0 3px; color: var(--warm); font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
 .timeline h3 { margin: 0; font-family: var(--serif); font-size: 23px; }
 .timeline article p:last-child, .service-note { margin: 4px 0 0; color: var(--muted); }
+.award-list { border-top: 2px solid var(--ink); }
+.award { display: grid; grid-template-columns: 84px 1fr; gap: 24px; padding: 27px 0; border-bottom: 1px solid var(--line); }
+.award time { color: var(--warm); font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+.award h3 { margin: 0; font-family: var(--serif); font-size: 23px; line-height: 1.32; }
+.award p { margin: 7px 0 0; color: var(--muted); font-size: 14px; }
 .service-note { max-width: 680px; padding: 22px 24px; border-left: 3px solid var(--accent); background: var(--accent-soft); }
 
 footer { display: flex; justify-content: space-between; gap: 24px; padding: 22px max(28px, calc((100vw - 1240px) / 2)); border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; text-transform: uppercase; }
@@ -156,7 +161,7 @@ footer { display: flex; justify-content: space-between; gap: 24px; padding: 22px
   .affiliations { grid-template-columns: 1fr; }
   .intro h2 { font-size: 36px; }
   .intro .lead { font-size: 17px; }
-  .news-list li, .publication { grid-template-columns: 1fr; gap: 8px; }
+  .news-list li, .publication, .award { grid-template-columns: 1fr; gap: 8px; }
   .split-heading { display: block; }
   .inline-link { margin-top: 14px; }
 }

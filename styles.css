@@ -1,5 +1,5 @@
 :root {
-  --paper: #eaf6ff;
+  --paper: #ffffff;
   --surface: #ffffff;
   --ink: #1a232c;
   --muted: #5c6872;
@@ -37,7 +37,7 @@ svg { width: 18px; height: 18px; stroke-width: 1.8; }
   gap: 36px;
   padding: 0 max(28px, calc((100vw - 1240px) / 2));
   border-bottom: 1px solid var(--line);
-  background: rgba(247, 247, 244, 0.95);
+  background: rgba(240, 248, 255, 0.95);
   backdrop-filter: blur(12px);
 }
 .wordmark { flex: 0 0 auto; font-family: var(--serif); font-size: 21px; font-weight: 700; }

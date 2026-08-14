@@ -66,6 +66,7 @@ h1 { margin: 0; font-family: var(--serif); font-size: 31px; font-weight: 600; li
 .affiliations svg { width: 16px; color: var(--accent); }
 .profile-links { display: flex; gap: 18px; margin-top: 20px; }
 .profile-links a, .inline-link { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-size: 13px; font-weight: 600; }
+.inline-link { font-size: 15px; }
 .profile-links a:hover, .inline-link:hover, .publication h3 a:hover, .news-list a:hover { color: var(--warm); }
 .interest-list { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 24px; }
 .interest-list span { padding: 4px 8px; border: 1px solid #c6dbd8; border-radius: 3px; background: var(--accent-soft); color: #235c57; font-size: 11px; font-weight: 500; }
@@ -75,7 +76,7 @@ h1 { margin: 0; font-family: var(--serif); font-size: 31px; font-weight: 600; li
 .section-block + .section-block { padding-top: 24px; }
 .section-block:last-child { border-bottom: 0; }
 .section-heading { margin-bottom: 16px; }
-.section-heading h2, .intro h2 { margin: 0; font-family: var(--serif); font-size: clamp(24px, 2vw, 26px); font-weight: 500; line-height: 1.15; }
+.section-heading h2, .intro h2 { margin: 0; font-family: var(--serif); font-size: clamp(24px, 2vw, 26px); font-weight: 600; line-height: 1.15; }
 .intro h2 { max-width: 780px; }
 .intro .lead { margin: 34px 0 16px; color: var(--ink); font-size: 18px; line-height: 1.6; }
 .intro > p:last-of-type { margin: 0; color: var(--muted); }

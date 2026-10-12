@@ -7,6 +7,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelector("#year").textContent = new Date().getFullYear();
 
+  const setPreviewHeight = (details, height) => {
+    details.closest(".publication-with-preview").style.setProperty(
+      "--publication-preview-height",
+      `${Math.floor(height)}px`,
+    );
+  };
+
+  const previewObserver = new ResizeObserver((entries) => {
+    entries.forEach((entry) => {
+      setPreviewHeight(entry.target, entry.contentRect.height);
+    });
+  });
+
+  document.querySelectorAll(".publication-with-preview .publication-details").forEach((details) => {
+    setPreviewHeight(details, details.getBoundingClientRect().height);
+    previewObserver.observe(details);
+  });
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {

@@ -35,7 +35,8 @@ Selected publications on About include figure previews and also appear in the
 text-only complete publication list. When editing a selected paper, update its
 entry on both pages.
 
-An asterisk marks Yongjian Tang as corresponding author on his first-author papers.
+Yongjian Tang's name is bold in all author lists. Small tags below the venue
+mark his first-author and corresponding-author roles.
 
 The Agent4RE preview is Figure 1 from
 [Tang, Li, and Runkler's paper](https://arxiv.org/abs/2610.10628), used under

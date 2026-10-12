@@ -25,6 +25,16 @@ document.addEventListener("DOMContentLoaded", () => {
     previewObserver.observe(details);
   });
 
+  document.querySelectorAll(".news-list").forEach((list) => {
+    const updateFades = () => {
+      list.classList.toggle("can-scroll-up", list.scrollTop > 1);
+      list.classList.toggle("can-scroll-down", list.scrollTop + list.clientHeight < list.scrollHeight - 1);
+    };
+    updateFades();
+    list.addEventListener("scroll", updateFades, { passive: true });
+    new ResizeObserver(updateFades).observe(list);
+  });
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {

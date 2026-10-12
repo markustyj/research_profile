@@ -23,7 +23,7 @@ Open `http://localhost:4173`.
 - [patents.html](patents.html) — placeholder for upcoming patent information
 - [experience.html](experience.html) — professional experience and education
 - `styles.css` — responsive academic layout and motion
-- `script.js` — icons, current year, and scroll reveals
+- `script.js` — icons, current year, figure sizes, news scroll fades, and scroll reveals
 - `assets/yongjian-tang.jpg` — public Google Scholar portrait
 - [assets/agent4re-overview.png](assets/agent4re-overview.png) — Agent4RE overview (Figure 1)
 - [assets/agent4cs-overview.png](assets/agent4cs-overview.png) - Agent4CS overview (Figure 1)

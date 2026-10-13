@@ -14,9 +14,9 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20261012-6" />
+    <link rel="stylesheet" href="styles.css?v=20261013" />
     <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
-    <script src="script.js?v=20261012-2" defer></script>
+    <script src="script.js?v=20261013" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -92,7 +92,7 @@
             <h2 id="news-title">News</h2>
           </div>
           <div class="news-panel">
-            <ol class="news-list" tabindex="0" aria-label="News items">
+            <ol class="news-list" id="news-items" tabindex="0" aria-label="News items">
               <li>
                 <time datetime="2026-10-08">Oct 2026</time>
                 <p>Our paper <a href="https://doi.org/10.1145/3843779.3844634" target="_blank" rel="noreferrer">Agent4RE: A Self-Refining Multi-agent Framework for End-to-End Software Requirements Engineering and Benchmarking</a> was published in <strong>POVC 2026 (ASE Workshops)</strong>.</p>
@@ -114,6 +114,9 @@
                 <p>Our paper <a href="https://doi.org/10.3233/FAIA240936" target="_blank" rel="noreferrer">FsPONER: Few-Shot Prompt Optimization for Named Entity Recognition in Domain-Specific Scenarios</a> was accepted to <strong>ECAI 2024</strong>.</p>
               </li>
             </ol>
+            <button class="news-scroll-cue" type="button" aria-label="Scroll to older news" aria-controls="news-items" title="Older news" disabled>
+              <i data-lucide="chevron-down" aria-hidden="true"></i>
+            </button>
           </div>
         </section>
 

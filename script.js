@@ -26,13 +26,22 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.querySelectorAll(".news-list").forEach((list) => {
-    const updateFades = () => {
+    const scrollMoreButton = list.closest(".news-panel").querySelector(".news-scroll-cue");
+    const updateScrollState = () => {
+      const canScrollDown = list.scrollTop + list.clientHeight < list.scrollHeight - 1;
       list.classList.toggle("can-scroll-up", list.scrollTop > 1);
-      list.classList.toggle("can-scroll-down", list.scrollTop + list.clientHeight < list.scrollHeight - 1);
+      list.classList.toggle("can-scroll-down", canScrollDown);
+      scrollMoreButton.disabled = !canScrollDown;
     };
-    updateFades();
-    list.addEventListener("scroll", updateFades, { passive: true });
-    new ResizeObserver(updateFades).observe(list);
+    updateScrollState();
+    list.addEventListener("scroll", updateScrollState, { passive: true });
+    new ResizeObserver(updateScrollState).observe(list);
+    scrollMoreButton.addEventListener("click", () => {
+      list.scrollBy({
+        top: list.clientHeight * 0.8,
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+      });
+    });
   });
 
   const observer = new IntersectionObserver(

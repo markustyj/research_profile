@@ -20,7 +20,7 @@ Open `http://localhost:4173`.
 
 - [index.html](index.html) — About: introduction, news, selected publications, and awards
 - [publications.html](publications.html) — complete publication list
-- [patents.html](patents.html) — placeholder for upcoming patent information
+- [patents.html](patents.html) — filed patents with inventors, filing dates, and status
 - [experience.html](experience.html) — professional experience and education
 - `styles.css` — responsive academic layout and motion
 - `script.js` — icons, current year, figure sizes, news scroll fades, and scroll reveals
